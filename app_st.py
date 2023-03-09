@@ -1,11 +1,12 @@
 import streamlit as st
 
-st.title("Dockertest v 2.0")
+st.title("Dockertest v 2.1")
 
 val = st.text_input('Valor')
-val = int(val)
+if val:
+    val = int(val)
 
-quad = val**2
-st.write(f'Quadrado: {quad}')
+    quad = val**2
+    st.write(f'Quadrado: {quad}')
 
 
